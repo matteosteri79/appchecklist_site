@@ -1,4 +1,29 @@
 /* =========================
+   App Checklist Theme
+========================= */
+
+:root {
+
+    --primary-color: #1565C0;
+
+    --sport-color: #EF5350;
+
+    --trip-color: #4A90E2;
+
+    --shop-color: #5BC08F;
+
+
+    --text-color: #1f1f1f;
+
+    --secondary-text: #666;
+
+    --surface-color: #ffffff;
+
+    --background-color: #fafafa;
+
+}
+
+/* =========================
    Global reset
 ========================= */
 
@@ -11,8 +36,8 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    background: #ffffff;
-    color: #1f1f1f;
+    background: var(--background-color);
+    color: var(--text-color);
     line-height: 1.6;
 }
 
@@ -52,6 +77,14 @@ footer {
 
 header {
     padding: 24px 0;
+}
+
+.brand img {
+
+    height: 48px;
+
+    width: auto;
+
 }
 
 
@@ -196,9 +229,22 @@ footer {
 
 .brand {
 
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
     font-size: 24px;
 
     font-weight: 700;
+
+}
+
+
+.brand img {
+
+    height: 48px;
 
 }
 
@@ -255,7 +301,7 @@ nav a:hover {
 
 .hero {
 
-    padding: 80px 0;
+    padding: 50px 0 10px;
 
 }
 
@@ -304,13 +350,69 @@ nav a:hover {
 
 .hero-actions {
 
-    display: flex;
+    display: none;
 
     justify-content: center;
 
     gap: 16px;
 
     flex-wrap: wrap;
+
+}
+/* =========================
+   Hero app buttons
+========================= */
+
+
+.hero-app {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 14px 32px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    color: white;
+
+    transition: transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+}
+
+
+.hero-app:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+            0 8px 20px rgba(0,0,0,0.15);
+
+}
+
+
+.hero-app.sport {
+
+    background: var(--sport-color);
+
+}
+
+
+.hero-app.trip {
+
+    background: var(--trip-color);
+
+}
+
+
+.hero-app.shop {
+
+    background: var(--shop-color);
 
 }
 
@@ -322,8 +424,7 @@ nav a:hover {
 
 .primary {
 
-    background: #1565C0;
-
+    background: var(--primary-color);
     color: white;
 
 }
@@ -343,7 +444,7 @@ nav a:hover {
 
 .apps {
 
-    padding: 60px 0;
+    padding: 30px 0;
 
 }
 
@@ -405,21 +506,21 @@ nav a:hover {
 
 .sport {
 
-    border-top: 6px solid #EF5350;
+    border-top: 6px solid var(--sport-color);
 
 }
 
 
 .trip {
 
-    border-top: 6px solid #4A90E2;
+    border-top: 6px solid var(--trip-color);
 
 }
 
 
 .shop {
 
-    border-top: 6px solid #5BC08F;
+    border-top: 6px solid var(--shop-color);
 
 }
 
@@ -462,7 +563,7 @@ nav a:hover {
 
 .page {
 
-    padding: 60px 0;
+    padding: 30px 0;
 
 }
 
@@ -511,5 +612,115 @@ nav a:hover {
 
     }
 
+
+}
+.app-card {
+
+    transition: transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+}
+
+
+.app-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+            0 10px 30px rgba(0,0,0,0.12);
+
+}
+/* =========================
+   App icons
+========================= */
+.app-icon {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: 0 auto 24px;
+}
+/* =========================
+   Store buttons
+========================= */
+
+
+.app-button {
+
+    display: inline-block;
+
+    margin: 8px;
+
+}
+.store-link {
+
+    display: inline-block;
+
+    margin: 8px;
+
+}
+
+
+.store-badge {
+
+    height: 50px;
+
+    width: auto;
+
+}
+
+/* =========================
+   App cards layout
+========================= */
+
+
+.app-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    height: 100%;
+
+}
+
+
+.app-card p {
+
+    flex-grow: 1;
+
+}
+
+.hero-app {
+
+    color: white;
+
+    border-radius: 30px;
+
+    padding: 14px 30px;
+
+    font-weight: 600;
+
+}
+
+
+.hero-app.sport {
+
+    background: var(--sport-color);
+
+}
+
+
+.hero-app.trip {
+
+    background: var(--trip-color);
+
+}
+
+
+.hero-app.shop {
+
+    background: var(--shop-color);
 
 }
