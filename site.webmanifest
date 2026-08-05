@@ -1,0 +1,21 @@
+{
+    "name": "App Checklist",
+    "short_name": "App Checklist",
+    "description": "Smart checklist apps for sports, travel and shopping.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ff7e00",
+    "icons": [
+        {
+            "src": "assets/images/favicon/favicon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/favicon/favicon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
