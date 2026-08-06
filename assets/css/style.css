@@ -772,3 +772,543 @@ nav a:hover {
     line-height: 1.7;
 
 }
+
+/* =====================================
+   APP LANDING PAGES
+===================================== */
+
+
+.app-hero {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+.app-hero-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.app-header-image {
+    width: min(100%, 500px);
+    height: auto;
+    margin-bottom: 30px;
+}
+
+
+
+.app-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+.app-hero p {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+
+.app-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 14px 24px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: transform 0.2s ease;
+}
+
+
+.app-button:hover {
+    transform: translateY(-2px);
+}
+
+
+
+.play-button {
+    background: #000;
+    color: white;
+}
+
+
+.web-button {
+    background: #e0e0e0;
+    color: #333;
+}
+
+
+
+
+
+/* SCREENSHOTS */
+
+
+.app-screenshots {
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+}
+
+
+.screenshots-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.screenshots-container img {
+
+    width: 280px;
+
+    max-width: 90%;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+}
+
+
+
+
+
+/* GENERAL SECTIONS */
+
+
+.app-section {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+}
+
+
+
+.app-logo {
+
+    width: 300px;
+
+    max-width: 80%;
+
+    margin: 0 auto 30px;
+
+    display: block;
+
+}
+
+
+
+
+
+/* FEATURES */
+
+
+.features-section {
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+}
+
+
+
+.features-grid {
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+
+    gap: 25px;
+
+}
+
+
+
+.feature-card {
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+}
+
+
+
+.feature-card .material-symbols-outlined {
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+
+
+/* SPORT CATEGORIES */
+
+
+.sport-categories {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+
+    gap:20px;
+
+    max-width:900px;
+
+    margin:40px auto;
+
+}
+
+
+.sport-categories div {
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:#ffffff;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+
+
+/* FAQ */
+
+
+.faq-section {
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:60px 20px;
+
+}
+
+
+.faq-section h3 {
+
+    margin-top:30px;
+
+}
+
+
+
+
+
+/* FINAL CTA */
+
+
+.final-cta {
+
+    text-align:center;
+
+    padding:70px 20px;
+
+}
+
+
+
+.final-cta p {
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+
+/* OTHER APPS */
+
+
+.other-apps {
+
+    padding:60px 20px;
+
+    text-align:center;
+
+}
+
+
+
+.other-apps-grid {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.other-apps-grid a {
+
+    width:180px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:white;
+
+    text-decoration:none;
+
+    color:inherit;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+    text-align:center;
+
+}
+
+
+
+.other-apps-grid img {
+
+    width:100px;
+
+    height:100px;
+
+    object-fit:contain;
+
+    display:block;
+
+    margin:0 auto 15px;
+
+}
+
+
+
+.other-apps-grid span {
+
+    display:block;
+
+    margin-top:15px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+/* SPORT BRAND */
+.sport-theme {
+    --app-color:#E53935;
+}
+.sport-theme h1,
+.sport-theme h2 {
+    color:var(--app-color);
+}
+.sport-theme .feature-card:hover {
+    border-color:var(--app-color);
+}
+.sport-theme .final-cta {
+    background:var(--app-color);
+    color:white;
+}
+.screenshots-container img {
+
+    width:280px;
+
+    border-radius:25px;
+
+    box-shadow:
+            0 15px 35px rgba(0,0,0,0.20);
+
+    transition:
+            transform .25s ease;
+
+}
+
+
+.screenshots-container img:hover {
+
+    transform:translateY(-8px);
+
+}
+
+.app-header-container {
+
+    text-align:center;
+
+}
+
+
+.app-header-container .app-header-image {
+
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.category-icon {
+
+    font-size:40px;
+
+    display:block;
+
+    margin-bottom:10px;
+
+}
+
+
+.sport-categories h3 {
+
+    margin:0;
+
+    font-size:1.1rem;
+
+}
+.how-it-works .feature-card {
+
+    min-height:220px;
+
+}
+.coming-soon-badge {
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px 22px;
+
+    border-radius:25px;
+
+    background:#f1f1f1;
+
+    color:#555;
+
+    font-weight:600;
+
+    border:1px solid #ddd;
+
+}
+.final-cta .coming-soon-badge {
+
+    background:rgba(255,255,255,0.2);
+
+    color:white;
+
+    border-color:rgba(255,255,255,0.4);
+
+}
+
+
+.coming-soon-badge .material-symbols-outlined {
+
+    font-size:22px;
+
+}
+
+
+.coming-soon-badge .material-symbols-outlined {
+
+    font-size:22px;
+
+}
+
+@media(max-width:600px){
+
+
+    .app-hero h1 {
+
+        font-size:2rem;
+
+    }
+
+
+    .app-buttons {
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+
+    .app-button {
+
+        width:90%;
+
+        justify-content:center;
+
+    }
+
+
+}
+
+.google-play-badge {
+
+    display:inline-block;
+
+}
+
+
+.google-play-badge img {
+
+    width:200px;
+
+    height:auto;
+
+    display:block;
+
+}
