@@ -1,635 +1,331 @@
 /* =========================
    App Checklist Theme
 ========================= */
-
 :root {
-
     --primary-color: #1565C0;
-
     --sport-color: #EF5350;
-
     --trip-color: #4A90E2;
-
     --shop-color: #5BC08F;
-
-
     --text-color: #1f1f1f;
-
     --secondary-text: #666;
-
     --surface-color: #ffffff;
-
     --background-color: #fafafa;
-
 }
 
 /* =========================
    Global reset
 ========================= */
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-
 body {
     font-family: "Roboto", sans-serif;
     background: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
 }
-
-
 img {
     max-width: 100%;
     display: block;
 }
-
-
 a {
     color: inherit;
     text-decoration: none;
 }
 
-
 /* =========================
    Layout
 ========================= */
-
 header,
 main,
 footer {
     width: 100%;
 }
-
-
 .container {
     width: min(1100px, 90%);
     margin: auto;
 }
 
-
 /* =========================
    Header
 ========================= */
-
 header {
     padding: 24px 0;
 }
-
 .brand img {
-
     height: 48px;
-
     width: auto;
-
 }
-
 
 /* =========================
    Footer
 ========================= */
-
-
 footer {
-
     margin-top: 80px;
-
     padding: 40px 0;
-
     border-top: 1px solid #eeeeee;
-
     color: #666;
-
     font-size: 14px;
-
 }
-
-
-
 .footer-content {
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 20px;
-
 }
-
-
-
 .footer-nav {
-
     display: flex;
-
     gap: 20px;
-
 }
-
-
-
 .footer-nav a:hover {
-
     color: #000;
-
 }
-
-
-
 @media(max-width:700px){
-
-
     .footer-content {
-
         flex-direction: column;
-
         text-align: center;
-
     }
-
-
 }
-
 
 /* =========================
    Buttons
 ========================= */
-
 .button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     padding: 12px 24px;
-
     border-radius: 12px;
-
     font-weight: 500;
-
     transition: transform 0.2s ease;
 }
-
-
 .button:hover {
     transform: translateY(-2px);
 }
 
-
 /* =========================
    Cards
 ========================= */
-
 .card {
-
     background: white;
-
     border-radius: 20px;
-
     padding: 24px;
-
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-
 }
-
 
 /* =========================
    Responsive
 ========================= */
-
 @media (max-width: 700px) {
-
     .container {
         width: 92%;
     }
-
 }
 
 /* =========================
    Header navigation
 ========================= */
-
-
 .header-content {
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 30px;
-
 }
-
-
 .brand {
-
     display: flex;
-
     align-items: center;
-
     gap: 12px;
-
     font-size: 24px;
-
     font-weight: 700;
-
 }
-
-
 .brand img {
-
     height: 48px;
-
 }
-
-
 nav {
-
     display: flex;
-
     gap: 24px;
-
 }
-
-
 nav a {
-
     font-size: 15px;
-
     color: #555;
-
 }
-
-
 nav a:hover {
-
     color: #000;
-
 }
-
-
 @media (max-width:700px) {
-
-
     .header-content {
-
         flex-direction: column;
-
     }
-
-
     nav {
-
         flex-wrap: wrap;
-
         justify-content: center;
-
     }
-
 }
 
 /* =========================
    Intro section
 ========================= */
 .intro {
-
     padding:70px 0 40px;
-
     text-align:center;
-
 }
-
-
 .intro-content {
-
     max-width:800px;
-
     margin:auto;
-
 }
-
-
 .intro h1 {
-
     font-size:2.8rem;
-
     margin-bottom:20px;
-
 }
-
-
 .intro p {
-
     font-size:1.2rem;
-
     line-height:1.6;
-
 }
-
 
 /* =========================
    Buttons colors
 ========================= */
-
-
 .primary {
-
     background: var(--primary-color);
     color: white;
-
 }
-
-
 .secondary {
-
     background: #eeeeee;
-
     color: #333;
-
 }
+
 /* =========================
    Apps section
 ========================= */
-
-
 .apps {
-
     padding: 30px 0;
-
 }
-
-
 .apps h2 {
-
     text-align: center;
-
     font-size: 36px;
-
     margin-bottom: 40px;
-
 }
-
-
-
 .apps-grid {
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 24px;
-
 }
-
-
-
 .app-card {
-
     text-align: center;
-
 }
-
-
-
 .app-card h3 {
-
     font-size: 26px;
-
     margin-bottom: 16px;
-
 }
-
-
-
 .app-card p {
-
     color: #555;
-
     margin-bottom: 24px;
-
 }
-
-
 
 /* App colors */
-
-
 .sport {
-
     border-top: 6px solid var(--sport-color);
-
 }
-
-
 .trip {
-
     border-top: 6px solid var(--trip-color);
-
 }
-
-
 .shop {
-
     border-top: 6px solid var(--shop-color);
-
 }
-
-
-
 .app-button {
-
     margin-top: 10px;
-
 }
 .discover-button {
-
     display:inline-flex;
-
     align-items:center;
-
     justify-content:center;
-
     margin-top:20px;
-
     padding:12px 28px;
-
     border-radius:30px;
-
     font-weight:500;
-
     text-decoration:none;
-
     transition:transform .2s ease,
     box-shadow .2s ease;
-
 }
 .discover-button.sport {
-
     background:#E53935;
-
     color:white;
-
 }
-
-
 .discover-button.trip {
-
     background:#4A90E2;
-
     color:white;
-
 }
-
-
 .discover-button.shop {
-
     background:#5BC08F;
-
     color:white;
-
 }
 .discover-button:hover {
-
     transform:translateY(-2px);
-
     box-shadow:0 8px 20px rgba(0,0,0,0.15);
-
 }
 .app-status {
-
     display:inline-block;
-
     margin:15px auto;
-
     padding:6px 14px;
-
     border-radius:20px;
-
     font-size:0.85rem;
-
     font-weight:500;
-
 }
-
-
 .app-status.available {
-
     background:#E8F5E9;
-
     color:#2E7D32;
-
 }
-
-
 .app-status.coming {
-
     background:#FFF3E0;
-
     color:#EF6C00;
-
 }
 .disabled {
-
     opacity: 0.6;
-
     cursor: default;
-
 }
-
-
-
 @media(max-width:900px){
-
-
     .apps-grid {
-
         grid-template-columns: 1fr;
-
     }
-
-
 }
 
 /* =========================
    Content pages
 ========================= */
-
-
 .page {
-
     padding: 30px 0;
-
 }
-
-
-
 .page h1 {
-
     font-size: 48px;
-
     margin-bottom: 30px;
-
 }
-
-
-
 .page h2 {
-
     font-size: 28px;
-
     margin-top: 40px;
-
     margin-bottom: 16px;
-
 }
-
-
-
 .page p {
-
     color: #555;
-
     margin-bottom: 16px;
-
     max-width: 800px;
-
 }
-
-
-
 @media(max-width:700px){
-
-
     .page h1 {
-
         font-size: 36px;
-
     }
-
-
 }
 .app-card {
-
     transition: transform 0.2s ease,
     box-shadow 0.2s ease;
-
 }
-
-
 .app-card:hover {
-
     transform: translateY(-6px);
-
     box-shadow:
             0 10px 30px rgba(0,0,0,0.12);
-
 }
+
 /* =========================
    App icons
 ========================= */
@@ -639,516 +335,245 @@ nav a:hover {
     object-fit: contain;
     margin: 0 auto 24px;
 }
+
 /* =========================
    Store buttons
 ========================= */
-
-
 .app-button {
-
     display: inline-block;
-
     margin: 8px;
-
 }
 .store-link {
-
     display: inline-block;
-
     margin: 8px;
-
 }
-
-
 .store-badge {
-
     height: 50px;
-
     width: auto;
-
 }
 
 /* =========================
    App cards layout
 ========================= */
-
-
 .app-card {
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     height: 100%;
-
 }
-
-
 .app-card p {
-
     flex-grow: 1;
-
 }
-
 .hero-app {
-
     color: white;
-
     border-radius: 30px;
-
     padding: 14px 30px;
-
     font-weight: 600;
-
 }
-
-
 .hero-app.sport {
-
     background: var(--sport-color);
-
 }
-
-
 .hero-app.trip {
-
     background: var(--trip-color);
-
 }
-
-
 .hero-app.shop {
-
     background: var(--shop-color);
-
 }
-
 
 /* =========================
    Internal pages
 ========================= */
-
-
 .page-header {
-
     text-align: center;
-
     padding: 60px 20px 30px;
-
 }
-
-
 .page-header h1 {
-
     font-size: 42px;
-
 }
-
-
 .content {
-
     max-width: 900px;
-
     margin: 0 auto;
-
     padding: 20px;
-
 }
-
-
 .content h2 {
-
     margin-top: 40px;
-
     margin-bottom: 15px;
-
 }
-
-
 .content p {
-
     line-height: 1.7;
-
 }
 
 /* =====================================
    APP LANDING PAGES
 ===================================== */
-
-
 .app-hero {
     padding: 60px 20px;
     text-align: center;
 }
-
-
 .app-hero-content {
     max-width: 900px;
     margin: auto;
 }
-
-
 .app-header-image {
     width: min(100%, 500px);
     height: auto;
     margin-bottom: 30px;
 }
-
-
-
 .app-hero h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
-
-
 .app-hero p {
     max-width: 700px;
     margin: 0 auto 35px;
     font-size: 1.2rem;
     line-height: 1.6;
 }
-
-
-
 .app-buttons {
     display: flex;
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
 }
-
-
-
 .app-button {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-
     padding: 14px 24px;
-
     border-radius: 30px;
-
     text-decoration: none;
-
     font-weight: 600;
-
     transition: transform 0.2s ease;
 }
-
-
 .app-button:hover {
     transform: translateY(-2px);
 }
-
-
-
 .play-button {
     background: #000;
     color: white;
 }
-
-
 .web-button {
     background: #e0e0e0;
     color: #333;
 }
 
-
-
-
-
 /* SCREENSHOTS */
-
-
 .app-screenshots {
-
     padding: 60px 20px;
-
     text-align: center;
-
 }
-
-
 .screenshots-container {
-
     display: flex;
-
     justify-content: center;
-
     gap: 30px;
-
     flex-wrap: wrap;
-
 }
-
-
 .screenshots-container img {
-
     width: 280px;
-
     max-width: 90%;
-
     border-radius: 25px;
-
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-
 }
-
-
-
-
-
 /* GENERAL SECTIONS */
-
-
 .app-section {
-
     max-width: 900px;
-
     margin: auto;
-
     padding: 60px 20px;
-
     text-align: center;
-
 }
-
-
-
 .app-logo {
-
     width: 300px;
-
     max-width: 80%;
-
     margin: 0 auto 30px;
-
     display: block;
-
 }
-
-
-
-
-
 /* FEATURES */
-
-
 .features-section {
-
     padding: 60px 20px;
-
     text-align: center;
-
 }
-
-
-
 .features-grid {
-
     max-width: 1100px;
-
     margin: 40px auto;
-
     display: grid;
-
     grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
-
     gap: 25px;
-
 }
-
-
-
 .feature-card {
-
     padding: 25px;
-
     border-radius: 20px;
-
     background: #ffffff;
-
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-
 }
-
-
-
 .feature-card .material-symbols-outlined {
-
     font-size: 40px;
-
     margin-bottom: 15px;
-
 }
-
-
-
-
-
 /* SPORT CATEGORIES */
-
-
 .sport-categories {
-
     display: grid;
-
     grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
-
     gap:20px;
-
     max-width:900px;
-
     margin:40px auto;
-
 }
-
-
 .sport-categories div {
-
     padding:20px;
-
     border-radius:20px;
-
     background:#ffffff;
-
     box-shadow:0 5px 15px rgba(0,0,0,0.08);
-
 }
-
-
-
-
-
 /* FAQ */
-
-
 .faq-section {
-
     max-width:900px;
-
     margin:auto;
-
     padding:60px 20px;
-
 }
-
-
 .faq-section h3 {
-
     margin-top:30px;
-
 }
-
-
-
-
 
 /* FINAL CTA */
-
-
 .final-cta {
-
     text-align:center;
-
     padding:70px 20px;
-
 }
-
-
-
 .final-cta p {
-
     margin-bottom:30px;
-
 }
-
-
-
-
-
 /* OTHER APPS */
-
-
 .other-apps {
-
     padding:60px 20px;
-
     text-align:center;
-
 }
-
-
-
 .other-apps-grid {
-
     display:flex;
-
     justify-content:center;
-
     gap:30px;
-
     flex-wrap:wrap;
-
 }
-
-
-
 .other-apps-grid a {
-
     width:180px;
-
     padding:20px;
-
     border-radius:20px;
-
     background:white;
-
     text-decoration:none;
-
     color:inherit;
-
     box-shadow:0 5px 20px rgba(0,0,0,0.08);
-
     text-align:center;
-
 }
-
-
-
 .other-apps-grid img {
-
     width:100px;
-
     height:100px;
-
     object-fit:contain;
-
     display:block;
-
     margin:0 auto 15px;
-
 }
-
-
-
 .other-apps-grid span {
-
     display:block;
-
     margin-top:15px;
-
     font-weight:600;
-
 }
-
-
-
-
-
 /* SPORT BRAND */
 .sport-theme {
     --app-color:#E53935;
@@ -1165,150 +590,75 @@ nav a:hover {
     color:white;
 }
 .screenshots-container img {
-
     width:280px;
-
     border-radius:25px;
-
     box-shadow:
             0 15px 35px rgba(0,0,0,0.20);
-
     transition:
             transform .25s ease;
-
 }
-
-
 .screenshots-container img:hover {
-
     transform:translateY(-8px);
-
 }
-
 .app-header-container {
-
     text-align:center;
-
 }
-
-
 .app-header-container .app-header-image {
-
     margin-left:auto;
     margin-right:auto;
-
 }
 .category-icon {
-
     font-size:40px;
-
     display:block;
-
     margin-bottom:10px;
-
 }
-
-
 .sport-categories h3 {
-
     margin:0;
-
     font-size:1.1rem;
-
 }
 .how-it-works .feature-card {
-
     min-height:220px;
-
 }
 .coming-soon-badge {
-
     display:inline-flex;
-
     align-items:center;
-
     gap:8px;
-
     padding:12px 22px;
-
     border-radius:25px;
-
     background:#f1f1f1;
-
     color:#555;
-
     font-weight:600;
-
     border:1px solid #ddd;
-
 }
 .final-cta .coming-soon-badge {
-
     background:rgba(255,255,255,0.2);
-
     color:white;
-
     border-color:rgba(255,255,255,0.4);
-
 }
-
-
 .coming-soon-badge .material-symbols-outlined {
-
     font-size:22px;
-
 }
-
-
 .coming-soon-badge .material-symbols-outlined {
-
     font-size:22px;
-
 }
-
 @media(max-width:600px){
-
-
     .app-hero h1 {
-
         font-size:2rem;
-
     }
-
-
     .app-buttons {
-
         flex-direction:column;
-
         align-items:center;
-
     }
-
-
     .app-button {
-
         width:90%;
-
         justify-content:center;
-
     }
-
-
 }
-
 .google-play-badge {
-
     display:inline-block;
-
 }
-
-
 .google-play-badge img {
-
     width:200px;
-
     height:auto;
-
     display:block;
-
 }

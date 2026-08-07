@@ -1,6 +1,4 @@
 function loadLanding(appId) {
-
-
     const app = Apps[appId];
     if (app.seo) {
         document.title = app.seo.title;
@@ -36,16 +34,8 @@ style="--app-color:${app.themeColor}">
 </div>
 
 
-<h1 style="color:${app.themeColor}">
-${app.heroTitle}
-</h1>
-
-
-<p>
-${app.heroDescription}
-</p>
-
-
+<h1 style="color:${app.themeColor}">${app.heroTitle}</h1>
+<p>${app.heroDescription}</p>
 
 <div class="app-buttons">
 
@@ -69,33 +59,16 @@ Coming soon on Google Play
 </div>
 `}
 
-<a href="${app.webApp}"
-class="app-button web-button"
-target="_blank">
-
-<span class="material-symbols-outlined">
-language
-</span>
-
-Open Web App
-
+<a href="${app.webApp}" class="app-button web-button" target="_blank">
+<span class="material-symbols-outlined">language</span>Open Web App
 </a>
 
-
 </div>
-
-
 </section>
-
-
-
 
 <section class="app-screenshots">
 
-<h2>
-See ${app.name} in action
-</h2>
-
+<h2>See ${app.name} in action</h2>
 
 <div class="screenshots-container">
 
@@ -105,51 +78,27 @@ ${app.screenshots.map(img => `
 
 `).join("")}
 
-
 </div>
 </section>
 
-
 <section class="app-section">
-<img 
-src="${app.logo}"
-class="app-logo"
-alt="${app.name}">
-<h2>
-${app.introTitle || ""}
-</h2>
-<p>
-${app.introText || ""}
-</p>
+<img src="${app.logo}" class="app-logo" alt="${app.name}">
+<h2>${app.introTitle || ""}</h2>
+<p>${app.introText || ""}</p>
 </section>
-
 
 <section class="features-section">
 
-<h2>
-Powerful Features
-</h2>
-
+<h2>Powerful Features</h2>
 
 <div class="features-grid">
-
 
 ${app.features.map(feature => `
 
 <div class="feature-card">
-
-<span class="material-symbols-outlined">
-${feature.icon}
-</span>
-
-<h3>
-${feature.title}
-</h3>
-
-<p>
-${feature.text}
-</p>
-
+<span class="material-symbols-outlined">${feature.icon}</span>
+<h3>${feature.title}</h3>
+<p>${feature.text}</p>
 </div>
 
 `).join("")}
@@ -159,11 +108,8 @@ ${feature.text}
 
 </section>
 
-
 <section class="app-section">
-<h2>
-Perfect For
-</h2>
+<h2>Perfect For</h2>
 <div class="sport-categories">
 ${app.perfectFor.map(item => {
         const parts = item.split(" ");
@@ -171,14 +117,9 @@ ${app.perfectFor.map(item => {
         const title = parts.join(" ");
         
         return `
-
     <div>
-        <span class="category-icon">
-            ${icon}
-        </span>
-        <h3>
-            ${title}
-        </h3>
+        <span class="category-icon">${icon}</span>
+        <h3>${title}</h3>
     </div>
     `;
 
@@ -186,65 +127,38 @@ ${app.perfectFor.map(item => {
 </div>
 </section>
 
-
-
 <section class="app-section how-it-works">
 
-<h2>
-How it works
-</h2>
+<h2>How it works</h2>
 
 <div class="features-grid">
 ${(app.howItWorks || []).map(step => `
 <div class="feature-card">
-<span class="material-symbols-outlined">
-${step.icon}
-</span>
-<h3>
-${step.title}
-</h3>
-<p>
-${step.text}
-</p>
+<span class="material-symbols-outlined">${step.icon}</span>
+<h3>${step.title}</h3>
+<p>${step.text}</p>
 </div>
 `).join("")}
 </div>
 </section>
 
-
 <section class="faq-section">
-
-<h2>
-Frequently Asked Questions
-</h2>
-
+<h2>Frequently Asked Questions</h2>
 
 ${app.faq.map(item => `
 
-<h3>
-${item.q}
-</h3>
-
-<p>
-${item.a}
-</p>
+<h3>${item.q}</h3>
+<p>${item.a}</p>
 
 `).join("")}
-
 
 </section>
 
 
-<section class="final-cta"
-style="background:${app.themeColor};color:white">
+<section class="final-cta" style="background:${app.themeColor};color:white">
 
-<h2>
-${app.ctaTitle || "Ready to get started?"}
-</h2>
-
-<p>
-${app.ctaText || ""}
-</p>
+<h2>${app.ctaTitle || "Ready to get started?"}</h2>
+<p>${app.ctaText || ""}</p>
 
 ${app.playStore && app.playStore !== "#" ? `
 
@@ -266,57 +180,28 @@ Coming soon on Google Play
 `}
 </section>
 
-
 <section class="other-apps">
-
-
-<h2>
-Discover other App Checklist apps
-</h2>
-
+<h2>Discover other App Checklist apps</h2>
 
 <div class="other-apps-grid">
 
 
 ${(app.relatedApps || []).map(id => {
-
         const related = Apps[id];
-
 
         return `
 
-<a 
-href="${id}.html"
-class="other-app-card"
-style="--app-color:${related.themeColor}">
-
-
-<img 
-src="${related.icon}"
-alt="${related.name}">
-
-
-<h3>
-${related.name}
-</h3>
-
-
+<a  href="${id}.html" class="other-app-card" style="--app-color:${related.themeColor}">
+<img  src="${related.icon}" alt="${related.name}">
+<h3>${related.name}</h3>
 </a>
 
 `;
 
     }).join("")}
 
-
 </div>
 
-
 </section>
-
-
-
-
-
 `;
-
 }
