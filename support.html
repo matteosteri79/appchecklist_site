@@ -37,39 +37,27 @@
 <body>
 
 <header>
-
     <div class="container header-content">
-
-        <a href="index.html" class="brand">
-            <img src="assets/images/logo.png"
-                 alt="App Checklist logo">
-            <span>App Checklist</span>
+        <a href="index.html" class="brand" aria-label="App Checklist home">
+            <img src="assets/images/logo.png" alt="App Checklist"><span>App Checklist</span>
         </a>
-
-
-        <nav>
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="privacy.html">
-                Privacy Policy
-            </a>
-
-            <a href="support.html">
-                Support
-            </a>
-
-            <a href="contact.html">
-                Contact
-            </a>
-
+        <nav aria-label="Main navigation">
+            <a href="index.html" data-i18n="menu.home"></a>
+            <a href="privacy.html" data-i18n="menu.privacy"></a>
+            <a href="support.html" data-i18n="menu.support"></a>
+            <a href="contact.html" data-i18n="menu.contact"></a>
+            <div class="language-switch">
+                <button onclick="setLanguage('it'); location.reload();" aria-label="Italiano">
+                    <img src="assets/images/flags/flag_it.png" alt="Italiano">
+                </button>
+                <button onclick="setLanguage('en'); location.reload();" aria-label="English">
+                    <img src="assets/images/flags/flag_en.png" alt="English">
+                </button>
+            </div>
         </nav>
-
     </div>
-
 </header>
+
 <main>
 
     <section class="page-header">
