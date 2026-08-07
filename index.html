@@ -47,10 +47,14 @@
             <img src="assets/images/logo.png" alt="App Checklist"><span>App Checklist</span>
         </a>
         <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="support.html">Support</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html" data-i18n="menu.home"></a>
+            <a href="privacy.html" data-i18n="menu.privacy"></a>
+            <a href="support.html" data-i18n="menu.support"></a>
+            <a href="contact.html" data-i18n="menu.contact"></a>
+            <div class="language-switch">
+                <button onclick="setLanguage('it'); location.reload();">IT</button>
+                <button onclick="setLanguage('en'); location.reload();">EN</button>
+            </div>
         </nav>
     </div>
 </header>
@@ -82,7 +86,8 @@
         </nav>
     </div>
 </footer>
-
+<script src="assets/js/language.js"></script>
+<script src="assets/js/app.js"></script>
 <script src="assets/js/apps.js"></script>
 <script src="assets/js/index.js"></script>
 </body>

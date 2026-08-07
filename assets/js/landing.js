@@ -1,7 +1,10 @@
 function loadLanding(appId) {
     const app = Apps[appId];
-    if (app.seo) {
-        document.title = app.seo.title;
+    const language = getEffectiveLanguage();
+    const content = translations[language].apps[appId];
+    const common = translations[language].common;
+    if (content.seo) {
+        document.title = content.seo.title;
         const updateMeta = (selector, value) => {
             const meta = document.querySelector(selector);
             if (meta && value) {
@@ -9,13 +12,13 @@ function loadLanding(appId) {
             }
         };
 
-        updateMeta('meta[name="description"]', app.seo.description);
-        updateMeta('meta[property="og:title"]', app.seo.title);
-        updateMeta('meta[property="og:description"]', app.seo.description);
+        updateMeta('meta[name="description"]', content.seo.description);
+        updateMeta('meta[property="og:title"]', content.seo.title);
+        updateMeta('meta[property="og:description"]', content.seo.description);
         updateMeta('meta[property="og:image"]', app.seo.image);
-        updateMeta('meta[name="twitter:title"]', app.seo.title);
-        updateMeta('meta[name="twitter:description"]', app.seo.description);
         updateMeta('meta[name="twitter:image"]', app.seo.image);
+        updateMeta('meta[name="twitter:title"]', content.seo.title);
+        updateMeta('meta[name="twitter:description"]', content.seo.description);
         updateMeta('meta[property="og:url"]', app.seo.url);
     }
 
@@ -34,8 +37,8 @@ style="--app-color:${app.themeColor}">
 </div>
 
 
-<h1 style="color:${app.themeColor}">${app.heroTitle}</h1>
-<p>${app.heroDescription}</p>
+<h1 style="color:${app.themeColor}">${content.heroTitle}</h1>
+<p>${content.heroDescription}</p>
 
 <div class="app-buttons">
 
@@ -55,12 +58,12 @@ alt="Get ${app.name} on Google Play">
 <span class="material-symbols-outlined">
 schedule
 </span>
-Coming soon on Google Play
+${common.comingSoonGooglePlay}
 </div>
 `}
 
 <a href="${app.webApp}" class="app-button web-button" target="_blank">
-<span class="material-symbols-outlined">language</span>Open Web App
+<span class="material-symbols-outlined">language</span>${common.openWebApp}
 </a>
 
 </div>
@@ -68,7 +71,7 @@ Coming soon on Google Play
 
 <section class="app-screenshots">
 
-<h2>See ${app.name} in action</h2>
+<h2>${common.seeInAction.replace("{app}", content.title)}</h2>
 
 <div class="screenshots-container">
 
@@ -83,17 +86,17 @@ ${app.screenshots.map(img => `
 
 <section class="app-section">
 <img src="${app.logo}" class="app-logo" alt="${app.name}">
-<h2>${app.introTitle || ""}</h2>
-<p>${app.introText || ""}</p>
+<h2>${content.introTitle || ""}</h2>
+<p>${content.introText || ""}</p>
 </section>
 
 <section class="features-section">
 
-<h2>Powerful Features</h2>
+<h2>${common.powerfulFeatures}</h2>
 
 <div class="features-grid">
 
-${app.features.map(feature => `
+${content.features.map(feature => `
 
 <div class="feature-card">
 <span class="material-symbols-outlined">${feature.icon}</span>
@@ -109,9 +112,9 @@ ${app.features.map(feature => `
 </section>
 
 <section class="app-section">
-<h2>Perfect For</h2>
+<h2>${common.perfectFor}</h2>
 <div class="sport-categories">
-${app.perfectFor.map(item => {
+${content.perfectFor.map(item => {
         const parts = item.split(" ");
         const icon = parts.shift();
         const title = parts.join(" ");
@@ -129,10 +132,10 @@ ${app.perfectFor.map(item => {
 
 <section class="app-section how-it-works">
 
-<h2>How it works</h2>
+<h2>${common.howItWorks}</h2>
 
 <div class="features-grid">
-${(app.howItWorks || []).map(step => `
+${(content.howItWorks || []).map(step => `
 <div class="feature-card">
 <span class="material-symbols-outlined">${step.icon}</span>
 <h3>${step.title}</h3>
@@ -143,9 +146,9 @@ ${(app.howItWorks || []).map(step => `
 </section>
 
 <section class="faq-section">
-<h2>Frequently Asked Questions</h2>
+<h2>${common.faq}</h2>
 
-${app.faq.map(item => `
+${content.faq.map(item => `
 
 <h3>${item.q}</h3>
 <p>${item.a}</p>
@@ -157,8 +160,8 @@ ${app.faq.map(item => `
 
 <section class="final-cta" style="background:${app.themeColor};color:white">
 
-<h2>${app.ctaTitle || "Ready to get started?"}</h2>
-<p>${app.ctaText || ""}</p>
+<h2>${content.ctaTitle || "Ready to get started?"}</h2>
+<p>${content.ctaText || ""}</p>
 
 ${app.playStore && app.playStore !== "#" ? `
 
@@ -175,13 +178,13 @@ alt="Get ${app.name} on Google Play">
 <span class="material-symbols-outlined">
 schedule
 </span>
-Coming soon on Google Play
+${common.comingSoonGooglePlay}
 </div>
 `}
 </section>
 
 <section class="other-apps">
-<h2>Discover other App Checklist apps</h2>
+<h2>${common.discoverOtherApps}</h2>
 
 <div class="other-apps-grid">
 
