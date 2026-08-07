@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Checklist | Smart Checklists for Sports, Travel and Shopping</title>
     <meta name="description" content="App Checklist is a collection of smart checklist apps for sports, travel and shopping. Stay organized with simple, customizable and powerful checklists.">
+    <meta name="robots" content="index,follow">
+
     <link rel="canonical" href="https://app-checklist.com/">
+
+    <meta property="og:site_name" content="App Checklist">
+    <meta property="og:locale" content="en_US">
     <meta property="og:title" content="App Checklist - Smart Checklists">
     <meta property="og:site_name" content="App Checklist">
     <meta property="og:description" content="Organize sports equipment, trips and shopping with simple and powerful checklist apps.">
@@ -31,164 +36,54 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#ff7e00">
+    <meta name="theme-color" content="#F57C00">
 </head>
 
 <body>
 
 <header>
-
     <div class="container header-content">
-
-        <a href="index.html" class="brand">
-            <img src="assets/images/logo.png"
-                 alt="App Checklist logo">
-            <span>App Checklist</span>
+        <a href="index.html" class="brand" aria-label="App Checklist home">
+            <img src="assets/images/logo.png" alt="App Checklist"><span>App Checklist</span>
         </a>
-
-
-        <nav>
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="privacy.html">
-                Privacy Policy
-            </a>
-
-            <a href="support.html">
-                Support
-            </a>
-
-            <a href="contact.html">
-                Contact
-            </a>
-
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+            <a href="contact.html">Contact</a>
         </nav>
-
     </div>
-
 </header>
 <main>
 
-
-    <section class="hero">
-
-        <div class="container hero-content">
-
-
-            <div class="hero-text">
-
-
-                <h1>
-                    Smart checklists<br>
-                    for every moment
-                </h1>
-
-
-                <p>
-                    App Checklist helps you organize
-                    sports equipment, trips and shopping
-                    with simple and powerful checklists.
-                </p>
-                <div class="hero-actions">
-                    <a href="https://sport.app-checklist.com"
-                       class="button hero-app sport">
-                        ✓ Sport Checklist
-                    </a>
-                    <a href="https://trip.app-checklist.com"
-                       class="button hero-app trip">
-                        ✓ Trip Checklist
-                    </a>
-                    <a href="#"
-                       class="button hero-app shop">
-                        ✓ Shop Checklist
-                    </a>
-                </div>
-            </div>
+    <section class="intro">
+        <div class="container intro-content">
+            <h1 id="home-title"></h1>
+            <p id="home-description"></p>
         </div>
-
     </section>
+
     <section class="apps">
-
         <div class="container">
-            <h2>
-                Our apps
-            </h2>
-            <div class="apps-grid">
-                <article class="card app-card sport">
-                    <img src="assets/images/sport/sportchecklist_icon.png"
-                         class="app-icon"
-                         alt="Sport Checklist">
-                    <p>
-                        Prepare your training sessions,
-                        competitions and sports equipment
-                        without forgetting anything.
-                    </p>
-                    <a href="https://sport.app-checklist.com"
-                       class="button app-button">
-                        Open Web App
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.matteosteri.sportchecklist"
-                       class="store-link">
-                        <img src="assets/images/store/google_play.svg"
-                             class="store-badge"
-                             alt="Get it on Google Play">
-                    </a>
-                </article>
-
-                <article class="card app-card trip">
-                    <img src="assets/images/trip/tripchecklist_icon.png"
-                         class="app-icon"
-                         alt="Trip Checklist">
-                    <p>
-                        Organize your trips and holidays
-                        with smart packing checklists.
-                    </p>
-                    <a href="https://trip.app-checklist.com"
-                       class="button app-button">
-                        Open Web App
-                    </a>
-                </article>
-
-                <article class="card app-card shop">
-                    <img src="assets/images/shop/shopchecklist_icon.png"
-                         class="app-icon"
-                         alt="Shop Checklist">
-                    <p>
-                        Create shopping lists and keep
-                        everything organized.
-                    </p>
-                    <span class="button app-button disabled">
-                        Coming soon
-                    </span>
-                </article>
-
-            </div>
-
+            <h2 id="our-apps"></h2>
+            <div class="apps-grid" id="apps-container"></div>
         </div>
     </section>
+
 </main>
+
 <footer>
     <div class="container footer-content">
-        <p>
-            © 2026 App Checklist. All rights reserved.
-        </p>
+        <p>© 2026 App Checklist. All rights reserved.</p>
         <nav class="footer-nav">
-            <a href="privacy.html">
-                Privacy Policy
-            </a>
-            <a href="support.html">
-                Support
-            </a>
-            <a href="contact.html">
-                Contact
-            </a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </div>
 </footer>
 
 <script src="assets/js/apps.js"></script>
+<script src="assets/js/index.js"></script>
 </body>
 </html>

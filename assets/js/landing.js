@@ -3,76 +3,33 @@ function loadLanding(appId) {
 
     const app = Apps[appId];
     if (app.seo) {
-
         document.title = app.seo.title;
-
-
-        let description =
-            document.querySelector('meta[name="description"]');
-
-
-        if (description) {
-
-            description.setAttribute(
-                "content",
-                app.seo.description
-            );
-
-        }
-
-
-        let ogTitle =
-            document.querySelector('meta[property="og:title"]');
-
-
-        if (ogTitle) {
-
-            ogTitle.setAttribute(
-                "content",
-                app.seo.title
-            );
-
-        }
-
-
-        let ogDescription = document.querySelector('meta[property="og:description"]');
-        if (ogDescription) {
-            let ogImage = document.querySelector('meta[property="og:image"]');
-
-            if (ogImage && app.seoImage) {
-                ogImage.setAttribute(
-                    "content",
-                    app.seo.seoImage
-                );
+        const updateMeta = (selector, value) => {
+            const meta = document.querySelector(selector);
+            if (meta && value) {
+                meta.setAttribute("content", value);
             }
-            ogDescription.setAttribute(
-                "content",
-                app.seo.description
-            );
+        };
 
-        }
-
+        updateMeta('meta[name="description"]', app.seo.description);
+        updateMeta('meta[property="og:title"]', app.seo.title);
+        updateMeta('meta[property="og:description"]', app.seo.description);
+        updateMeta('meta[property="og:image"]', app.seo.image);
+        updateMeta('meta[name="twitter:title"]', app.seo.title);
+        updateMeta('meta[name="twitter:description"]', app.seo.description);
+        updateMeta('meta[name="twitter:image"]', app.seo.image);
+        updateMeta('meta[property="og:url"]', app.seo.url);
     }
 
     if (!app) {
-
         console.error("App not found:", appId);
-
         return;
-
     }
-
-
     const container =
         document.getElementById("appLanding");
-
-
     container.innerHTML = `
-
-
 <section class="app-hero sport-theme"
 style="--app-color:${app.themeColor}">
-
 
 <div class="app-header-container">
 <img src="${app.header}" class="app-header-image" alt="${app.name}">

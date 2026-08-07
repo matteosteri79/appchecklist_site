@@ -3,12 +3,16 @@ const Apps = {
     sport: {
         id: "sport",
         name: "Sport Checklist",
+        status: "available",
+        statusLabel: "Available on Google Play",
+        shortDescription: "Prepare your training sessions, competitions and sports equipment without forgetting anything.",
+        themeColor: "#E53935",
         seo: {
             title: "Sport Checklist - Organize Your Sports Equipment",
             description: "Create smart checklists for training, competitions and sports trips. Never forget your equipment again.",
-            seoImage: "https://app-checklist.com/assets/images/sport/sportchecklist_logo.png"
+            image: "https://app-checklist.com/assets/images/sport/sportchecklist_logo.png",
+            url: "https://app-checklist.com/sport.html"
         },
-        themeColor: "#E53935",
         header: "assets/images/sport/sportchecklist_header.png",
         logo: "assets/images/sport/sportchecklist_logo.png",
         icon: "assets/images/sport/sportchecklist_icon.png",
@@ -110,12 +114,16 @@ const Apps = {
     trip: {
         id: "trip",
         name: "Trip Checklist",
-        seo: {
-            title:     "Trip Checklist - Travel Without Forgetting Anything",
-            description: "Organize luggage, documents and travel essentials with Trip Checklist. Prepare every journey with confidence.",
-            seoImage: "https://app-checklist.com/assets/images/trip/tripchecklist_logo.png"
-        },
+        status: "available",
+        statusLabel: "Available on Google Play",
+        shortDescription: "Organize your trips and holidays with smart packing checklists.",
         themeColor: "#1976D2",
+        seo: {
+            title: "Trip Checklist - Travel Without Forgetting Anything",
+            description: "Organize luggage, documents and travel essentials with Trip Checklist. Prepare every journey with confidence.",
+            image: "https://app-checklist.com/assets/images/trip/tripchecklist_logo.png",
+            url: "https://app-checklist.com/trip.html"
+        },
         header: "assets/images/trip/tripchecklist_header.png",
         logo: "assets/images/trip/tripchecklist_logo.png",
         icon: "assets/images/trip/tripchecklist_icon.png",
@@ -212,12 +220,16 @@ const Apps = {
     shop: {
         id: "shop",
         name: "Shop Checklist",
+        status: "coming_soon",
+        statusLabel: "Coming soon",
+        shortDescription: "Create shopping lists and keep everything organized.",
+        themeColor: "#43A047",
         seo: {
             title: "Shop Checklist - Smart Shopping Lists",
             description: "Create shopping lists, organize products and simplify your daily purchases with Shop Checklist.",
-            seoImage: "https://app-checklist.com/assets/images/shop/shopchecklist_logo.png"
+            image: "https://app-checklist.com/assets/images/shop/shopchecklist_logo.png",
+            url: "https://app-checklist.com/shop.html"
         },
-        themeColor: "#43A047",
         header: "assets/images/shop/shopchecklist_header.png",
         logo: "assets/images/shop/shopchecklist_logo.png",
         icon: "assets/images/shop/shopchecklist_icon.png",
