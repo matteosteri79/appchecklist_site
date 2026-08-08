@@ -4,7 +4,7 @@ const Apps = {
         id: "sport",
         name: "Sport Checklist",
         status: "available",
-        themeColor: "#E53935",
+        themeColor: "#EF5350",
         seo: {
             image: "assets/images/sport/sportchecklist_logo.png",
             url: "sport.html"
