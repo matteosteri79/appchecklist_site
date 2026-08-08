@@ -2,16 +2,19 @@
    App Checklist Theme
 ========================= */
 :root {
-    --primary-color: #1565C0;
+    --primary-color: #ff7e00;
     --sport-color: #EF5350;
+    --sport-darkcolor: #c62828;
     --trip-color: #4A90E2;
+    --trip-darkcolor: #1565C0;
     --shop-color: #5BC08F;
+    --shop-darkcolor: #279861;
     --text-color: #1f1f1f;
     --secondary-text: #666;
     --surface-color: #ffffff;
     --background-color: #fafafa;
 }
-v
+
 /* =========================
    Global reset
 ========================= */
@@ -227,13 +230,13 @@ nav a:hover {
 
 /* App colors */
 .sport {
-    border-top: 6px solid var(--sport-color);
+    border-top: 6px solid var(--sport-darkcolor);
 }
 .trip {
-    border-top: 6px solid var(--trip-color);
+    border-top: 6px solid var(--trip-darkcolor);
 }
 .shop {
-    border-top: 6px solid var(--shop-color);
+    border-top: 6px solid var(--shop-darkcolor);
 }
 .app-button {
     margin-top: 10px;
