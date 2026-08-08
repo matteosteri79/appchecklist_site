@@ -344,19 +344,135 @@ const translations = {
             contact: "Contatti"
         },
 
-        contact: {
-            title: "Contattaci",
-            subtitle: "Hai bisogno di aiuto? Siamo qui per rispondere alle tue domande."
-        },
-
         support: {
             title: "Supporto",
-            subtitle: "Consulta le informazioni di supporto o contattaci per ricevere assistenza."
+            intro: "Hai bisogno di aiuto con App Checklist? Siamo qui per aiutarti.",
+
+            appChecklistSupport: "Supporto App Checklist",
+            welcome: "Benvenuto nella pagina di supporto di App Checklist. Qui puoi trovare informazioni sulle nostre applicazioni e su come ricevere assistenza.",
+
+            ourApplications: "Le nostre applicazioni",
+            applicationsIntro: "App Checklist include applicazioni checklist dedicate, progettate per esigenze diverse:",
+
+            sportChecklist: "organizza la tua attrezzatura sportiva, gli allenamenti e le competizioni.",
+            tripChecklist: "prepara i tuoi viaggi e non dimenticare mai gli oggetti importanti.",
+            shopChecklist: "gestisci le tue liste della spesa in modo semplice e veloce.",
+
+            commonQuestions: "Domande frequenti",
+
+            dataStored: "Dove vengono archiviati i dati delle mie checklist?",
+            dataStoredAnswer: "I dati delle tue checklist vengono archiviati localmente sul tuo dispositivo. App Checklist non richiede un account e non carica i contenuti delle tue checklist su server esterni.",
+
+            changedPhone: "Ho cambiato telefono. Posso recuperare le mie checklist?",
+            changedPhoneAnswer: "Poiché i dati delle checklist vengono archiviati localmente, il recupero dipende dal sistema di backup del tuo dispositivo. Ti consigliamo di mantenere backup appropriati dei dati del tuo dispositivo.",
+
+            foundProblem: "Ho riscontrato un problema. Cosa devo fare?",
+            foundProblemAnswer: "Se riscontri un problema, contattaci fornendo:",
+
+            applicationName: "nome dell'applicazione (Sport Checklist, Trip Checklist o Shop Checklist)",
+            deviceModel: "modello del dispositivo",
+            androidVersion: "versione di Android",
+            problemDescription: "descrizione del problema",
+            screenshots: "screenshot, se disponibili",
+
+            contactSupport: "Contatta il supporto",
+            contactSupportIntro: "Per ricevere assistenza, contattaci:",
+
+            email: "Email:"
         },
 
         privacy: {
-            title: "Informativa sulla privacy"
-        }
+            title: "Informativa sulla Privacy",
+            lastUpdated: "Ultimo aggiornamento: agosto 2026",
+
+            introduction: "Questa Informativa sulla Privacy descrive come App Checklist gestisce le informazioni quando gli utenti accedono al nostro sito web, alle Progressive Web App (PWA) e alle applicazioni mobili.",
+
+            privacyByDesign: "App Checklist è progettata tenendo conto della privacy. Le nostre applicazioni non richiedono account utente e i dati delle checklist vengono principalmente archiviati localmente sul dispositivo dell'utente.",
+
+            dataControllerTitle: "1. Titolare del trattamento",
+            dataControllerText: "Il titolare del trattamento responsabile del trattamento dei dati personali relativi ai servizi di App Checklist è lo sviluppatore di App Checklist.",
+
+            dataControllerContact: "Per qualsiasi domanda relativa a questa Informativa sulla Privacy, gli utenti possono contattarci utilizzando le informazioni di contatto disponibili su questo sito web.",
+
+            legalBasisTitle: "2. Base giuridica del trattamento",
+            legalBasisText: "Quando applicabile, il trattamento dei dati personali viene effettuato in conformità al Regolamento (UE) 2016/679 (Regolamento generale sulla protezione dei dati - GDPR).",
+
+            legalBasisLocal: "Poiché App Checklist non richiede la registrazione di un account e non raccoglie informazioni personali per le sue funzionalità principali, la maggior parte dei dati delle applicazioni rimane sotto il controllo dell'utente sul proprio dispositivo.",
+
+            informationCollectTitle: "3. Informazioni che raccogliamo",
+            informationCollectText: "App Checklist non richiede agli utenti di fornire informazioni personali come nome, indirizzo email, numero di telefono o posizione per utilizzare le applicazioni.",
+
+            noSelling: "Non vendiamo, affittiamo né condividiamo le informazioni personali degli utenti con terze parti per finalità di marketing.",
+
+            deviceDataTitle: "4. Dati archiviati sul dispositivo",
+            deviceDataText: "Gli elementi delle checklist, le preferenze, i temi, le impostazioni della lingua e le configurazioni delle applicazioni possono essere archiviati localmente sul dispositivo dell'utente tramite lo spazio di archiviazione dell'applicazione o il local storage del browser.",
+
+            deviceDataTransmission: "Queste informazioni non vengono trasmesse ai server di App Checklist e rimangono archiviate sul dispositivo dell'utente.",
+
+            permissionsTitle: "5. Autorizzazioni",
+            permissionsText: "Le applicazioni App Checklist richiedono esclusivamente le autorizzazioni necessarie per fornire le proprie funzionalità.",
+
+            permissionsSensitive: "Attualmente, le applicazioni non richiedono l'accesso a informazioni sensibili come contatti, fotocamera, microfono o posizione.",
+
+            thirdPartyTitle: "6. Servizi di terze parti",
+            thirdPartyGooglePlay: "Le applicazioni App Checklist possono essere distribuite tramite Google Play. Google può trattare alcune informazioni tecniche relative all'installazione delle app, agli aggiornamenti, alla sicurezza e alla disponibilità del servizio in conformità con la Privacy Policy di Google.",
+
+            thirdPartyTracking: "App Checklist non utilizza reti pubblicitarie di terze parti né servizi di tracciamento degli utenti.",
+
+            cookiesTitle: "7. Cookie",
+            cookiesText: "Il sito web di App Checklist non utilizza cookie pubblicitari o cookie di tracciamento.",
+
+            cookiesTechnical: "Cookie tecnici o tecnologie simili possono essere utilizzati esclusivamente quando necessari per il corretto funzionamento del sito web.",
+
+            securityTitle: "8. Sicurezza dei dati",
+            securityText: "Adottiamo misure ragionevoli per proteggere le informazioni gestite da App Checklist.",
+
+            securityBackup: "Poiché i dati delle checklist vengono archiviati localmente sul dispositivo dell'utente, gli utenti sono responsabili di mantenere backup appropriati dei propri dati.",
+
+            childrenTitle: "9. Privacy dei minori",
+            childrenText: "I servizi App Checklist sono progettati per un pubblico generale. Non raccogliamo consapevolmente informazioni personali da minori.",
+
+            deletionTitle: "10. Cancellazione dei dati",
+            deletionText: "Poiché le informazioni delle checklist vengono archiviate localmente sul dispositivo, puoi eliminare i tuoi dati in qualsiasi momento rimuovendo l'applicazione o cancellando i dati dell'app attraverso le impostazioni del dispositivo.",
+
+            rightsTitle: "11. I tuoi diritti",
+            rightsText: "A seconda delle leggi applicabili, gli utenti possono avere diritti relativi ai propri dati personali, inclusi il diritto di accesso, rettifica e cancellazione.",
+
+            changesTitle: "12. Modifiche a questa Informativa sulla Privacy",
+            changesText: "Potremmo aggiornare questa Informativa sulla Privacy periodicamente. Eventuali modifiche saranno pubblicate su questa pagina con una data di revisione aggiornata.",
+
+            contactTitle: "13. Contatti",
+            contactText: "Per domande relative a questa Informativa sulla Privacy, contattaci:",
+
+            email: "Email:"
+        },
+
+        contact: {
+            title: "Contatti",
+            intro: "Contatta il team di App Checklist.",
+
+            contactUs: "Contattaci",
+            contactUsText: "Se hai domande, feedback o hai bisogno di assistenza per una delle nostre applicazioni, puoi contattarci utilizzando le informazioni riportate di seguito.",
+
+            supportRequests: "Richieste di assistenza",
+            supportRequestsText: "Per problemi tecnici, includi nel tuo messaggio le seguenti informazioni:",
+
+            applicationName: "Nome dell'applicazione (Sport Checklist, Trip Checklist o Shop Checklist)",
+            deviceModel: "Modello del dispositivo",
+            androidVersion: "Versione di Android",
+            issueDescription: "Descrizione del problema",
+            screenshots: "Screenshot o ulteriori dettagli, quando utili",
+
+            emailTitle: "Email",
+            emailIntro: "Puoi contattarci a:",
+            email: "Email:",
+
+            privacyRequests: "Richieste relative alla privacy",
+            privacyRequestsText: "Per richieste relative alla privacy, ai dati personali o ai diritti previsti dal GDPR, contattaci indicando chiaramente l'oggetto della richiesta.",
+
+            privacyMoreInfo: "Puoi trovare maggiori informazioni nella nostra",
+            privacyPolicy: "Informativa sulla Privacy"
+        },
 
     },
 
@@ -704,24 +820,140 @@ const translations = {
             contact: "Contact"
         },
 
-        contact: {
-            title: "Contact us",
-            subtitle: "Need help? We are here to answer your questions."
-        },
-
         support: {
             title: "Support",
-            subtitle: "Find support information or contact us for assistance."
+            intro: "Need help with App Checklist? We are here to assist you.",
+
+            appChecklistSupport: "App Checklist Support",
+            welcome: "Welcome to the App Checklist support page. Here you can find information about our applications and how to get assistance.",
+
+            ourApplications: "Our Applications",
+            applicationsIntro: "App Checklist includes dedicated checklist applications designed for different needs:",
+
+            sportChecklist: "organize your sports equipment, training sessions and competitions.",
+            tripChecklist: "prepare your travels and never forget important items.",
+            shopChecklist: "manage your shopping lists quickly and easily.",
+
+            commonQuestions: "Common Questions",
+
+            dataStored: "Where is my checklist data stored?",
+            dataStoredAnswer: "Your checklist data is stored locally on your device. App Checklist does not require an account and does not upload your checklist content to external servers.",
+
+            changedPhone: "I changed my phone. Can I recover my checklists?",
+            changedPhoneAnswer: "Since checklist data is stored locally, recovery depends on your device backup system. We recommend keeping appropriate backups of your device data.",
+
+            foundProblem: "I found a problem. What should I do?",
+            foundProblemAnswer: "If you experience a problem, please contact us with:",
+
+            applicationName: "application name (Sport Checklist, Trip Checklist or Shop Checklist)",
+            deviceModel: "device model",
+            androidVersion: "Android version",
+            problemDescription: "description of the problem",
+            screenshots: "screenshots if available",
+
+            contactSupport: "Contact Support",
+            contactSupportIntro: "For assistance, please contact us:",
+
+            email: "Email:"
         },
 
         privacy: {
-            title: "Privacy Policy"
-        }
+            title: "Privacy Policy",
+            lastUpdated: "Last updated: August 2026",
+
+            introduction: "This Privacy Policy describes how App Checklist handles information when users access our website, Progressive Web Apps (PWAs), and mobile applications.",
+
+            privacyByDesign: "App Checklist is designed with privacy in mind. Our applications do not require user accounts and checklist data is primarily stored locally on the user's device.",
+
+            dataControllerTitle: "1. Data Controller",
+            dataControllerText: "The data controller responsible for the processing of personal data related to App Checklist services is the developer of App Checklist.",
+
+            dataControllerContact: "For any questions regarding this Privacy Policy, users can contact us through the contact information provided on this website.",
+
+            legalBasisTitle: "2. Legal Basis for Processing",
+            legalBasisText: "When applicable, personal data processing is carried out in accordance with Regulation (EU) 2016/679 (General Data Protection Regulation - GDPR).",
+
+            legalBasisLocal: "Since App Checklist does not require account registration and does not collect personal information for its core functionality, most application data remains under the user's control on their own device.",
+
+            informationCollectTitle: "3. Information We Collect",
+            informationCollectText: "App Checklist does not require users to provide personal information such as name, email address, phone number or location in order to use the applications.",
+
+            noSelling: "We do not sell, rent or share users' personal information with third parties for marketing purposes.",
+
+            deviceDataTitle: "4. Data Stored on Your Device",
+            deviceDataText: "Checklist items, preferences, themes, language settings and application configurations may be stored locally on the user's device through application storage or browser local storage.",
+
+            deviceDataTransmission: "This information is not transmitted to App Checklist servers and remains stored on the user's device.",
+
+            permissionsTitle: "5. Permissions",
+            permissionsText: "App Checklist applications request only permissions that are necessary for providing their functionality.",
+
+            permissionsSensitive: "Currently, the applications do not require access to sensitive information such as contacts, camera, microphone or location.",
+
+            thirdPartyTitle: "6. Third-Party Services",
+            thirdPartyGooglePlay: "App Checklist applications may be distributed through Google Play. Google may process certain technical information related to app installation, updates, security and service availability according to Google's Privacy Policy.",
+
+            thirdPartyTracking: "App Checklist does not use third-party advertising networks or user tracking services.",
+
+            cookiesTitle: "7. Cookies",
+            cookiesText: "The App Checklist website does not use advertising cookies or tracking cookies.",
+
+            cookiesTechnical: "Technical cookies or similar technologies may be used only when necessary for the correct operation of the website.",
+
+            securityTitle: "8. Data Security",
+            securityText: "We take reasonable measures to protect information handled by App Checklist.",
+
+            securityBackup: "Since checklist data is stored locally on the user's device, users are responsible for maintaining appropriate backups of their own data.",
+
+            childrenTitle: "9. Children's Privacy",
+            childrenText: "App Checklist services are designed for general audiences. We do not knowingly collect personal information from children.",
+
+            deletionTitle: "10. Data Deletion",
+            deletionText: "Since checklist information is stored locally on your device, you can delete your data at any time by removing the application or clearing application data through your device settings.",
+
+            rightsTitle: "11. Your Rights",
+            rightsText: "Depending on applicable laws, users may have rights regarding their personal data, including access, correction and deletion requests.",
+
+            changesTitle: "12. Changes to This Privacy Policy",
+            changesText: "We may update this Privacy Policy from time to time. Any changes will be published on this page with an updated revision date.",
+
+            contactTitle: "13. Contact",
+            contactText: "For questions regarding this Privacy Policy, please contact us:",
+
+            email: "Email:"
+        },
+
+        contact: {
+            title: "Contact",
+            intro: "Get in touch with the App Checklist team.",
+
+            contactUs: "Contact Us",
+            contactUsText: "If you have questions, feedback or need assistance with one of our applications, you can contact us using the information below.",
+
+            supportRequests: "Support Requests",
+            supportRequestsText: "For technical issues, please include the following information in your message:",
+
+            applicationName: "Application name (Sport Checklist, Trip Checklist or Shop Checklist)",
+            deviceModel: "Device model",
+            androidVersion: "Android version",
+            issueDescription: "Description of the issue",
+            screenshots: "Screenshots or additional details when useful",
+
+            emailTitle: "Email",
+            emailIntro: "You can contact us at:",
+
+            privacyRequests: "Privacy Requests",
+            privacyRequestsText: "For requests related to privacy, personal data or GDPR rights, please contact us and clearly indicate the subject of your request.",
+
+            privacyMoreInfo: "You can find more information in our",
+            privacyPolicy: "Privacy Policy"
+        },
 
     }
 };
 
 const LANGUAGE_KEY = "language";
+const APP_EMAIL = "matteosteri+appchecklist@gmail.com";
 
 function getLanguage() {
     return localStorage.getItem(LANGUAGE_KEY);
@@ -748,9 +980,15 @@ function applyTranslations() {
         const value = key.split(".").reduce((obj, part) => {
             return obj?.[part];
         }, translations[language]);
+
         if (value) {
             element.textContent = value;
         }
+    });
+
+    document.querySelectorAll("[data-email]").forEach(element => {
+        element.textContent = APP_EMAIL;
+        element.href = `mailto:${APP_EMAIL}`;
     });
 }
 
