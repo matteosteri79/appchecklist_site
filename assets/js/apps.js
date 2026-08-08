@@ -6,8 +6,8 @@ const Apps = {
         status: "available",
         themeColor: "#E53935",
         seo: {
-            image: "https://app-checklist.com/assets/images/sport/sportchecklist_logo.png",
-            url: "https://app-checklist.com/sport.html"
+            image: "assets/images/sport/sportchecklist_logo.png",
+            url: "sport.html"
         },
         header: "assets/images/sport/sportchecklist_header.png",
         logo: "assets/images/sport/sportchecklist_logo.png",
@@ -30,8 +30,8 @@ const Apps = {
         status: "available",
         themeColor: "#1976D2",
         seo: {
-            image: "https://app-checklist.com/assets/images/trip/tripchecklist_logo.png",
-            url: "https://app-checklist.com/trip.html"
+            image: "assets/images/trip/tripchecklist_logo.png",
+            url: "trip.html"
         },
         header: "assets/images/trip/tripchecklist_header.png",
         logo: "assets/images/trip/tripchecklist_logo.png",
@@ -54,8 +54,8 @@ const Apps = {
         status: "coming_soon",
         themeColor: "#43A047",
         seo: {
-            image: "https://app-checklist.com/assets/images/shop/shopchecklist_logo.png",
-            url: "https://app-checklist.com/shop.html"
+            image: "assets/images/shop/shopchecklist_logo.png",
+            url: "shop.html"
         },
         header: "assets/images/shop/shopchecklist_header.png",
         logo: "assets/images/shop/shopchecklist_logo.png",

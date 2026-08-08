@@ -7,7 +7,6 @@ const translations = {
         },
         menu: {
             home: "Home",
-            apps: "Le App",
             privacy: "Privacy",
             support: "Supporto",
             contact: "Contatti"
@@ -369,7 +368,6 @@ const translations = {
         },
         menu: {
             home: "Home",
-            apps: "Apps",
             privacy: "Privacy",
             support: "Support",
             contact: "Contact"
