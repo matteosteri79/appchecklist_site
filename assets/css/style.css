@@ -66,7 +66,6 @@ header {
    Footer
 ========================= */
 footer {
-    margin-top: 80px;
     padding: 40px 0;
     border-top: 1px solid #eeeeee;
     color: #666;
@@ -84,12 +83,6 @@ footer {
 }
 .footer-nav a:hover {
     color: #000;
-}
-@media(max-width:700px){
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
 /* =========================
@@ -112,7 +105,7 @@ footer {
    Cards
 ========================= */
 .card {
-    background: white;
+    background: var(--surface-color);
     border-radius: 20px;
     padding: 24px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
@@ -158,34 +151,25 @@ nav a {
 nav a:hover {
     color: #000;
 }
-@media (max-width:700px) {
-    .header-content {
-        flex-direction: column;
-    }
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
 
 /* =========================
    Intro section
 ========================= */
 .intro {
-    padding:70px 0 40px;
-    text-align:center;
+    padding: 30px 0;
+    text-align: center;
 }
 .intro-content {
-    max-width:800px;
-    margin:auto;
+    max-width: 800px;
+    margin: auto;
 }
 .intro h1 {
-    font-size:2.8rem;
-    margin-bottom:20px;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
 }
 .intro p {
-    font-size:1.2rem;
-    line-height:1.6;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 /* =========================
@@ -193,7 +177,7 @@ nav a:hover {
 ========================= */
 .primary {
     background: var(--primary-color);
-    color: white;
+    color: var(--surface-color);
 }
 .secondary {
     background: #eeeeee;
@@ -242,57 +226,52 @@ nav a:hover {
     margin-top: 10px;
 }
 .discover-button {
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    margin-top:20px;
-    padding:12px 28px;
-    border-radius:30px;
-    font-weight:500;
-    text-decoration:none;
-    transition:transform .2s ease,
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform .2s ease,
     box-shadow .2s ease;
 }
 .discover-button.sport {
-    background:#EF5350;
-    color:white;
+    background: var(--sport-color);
+    color: var(--surface-color);
 }
 .discover-button.trip {
-    background:#4A90E2;
-    color:white;
+    background: var(--trip-color);
+    color: var(--surface-color);
 }
 .discover-button.shop {
-    background:#5BC08F;
-    color:white;
+    background: var(--shop-color);
+    color: var(--surface-color);
 }
 .discover-button:hover {
-    transform:translateY(-2px);
-    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 .app-status {
-    display:inline-block;
-    margin:15px auto;
-    padding:6px 14px;
-    border-radius:20px;
-    font-size:0.85rem;
-    font-weight:500;
+    display: inline-block;
+    margin: 15px auto;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 .app-status.available {
-    background:#E8F5E9;
-    color:#2E7D32;
+    background: #E8F5E9;
+    color: #2E7D32;
 }
 .app-status.coming {
-    background:#FFF3E0;
-    color:#EF6C00;
+    background: #FFF3E0;
+    color: #EF6C00;
 }
 .disabled {
     opacity: 0.6;
     cursor: default;
-}
-@media(max-width:900px){
-    .apps-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* =========================
@@ -315,18 +294,13 @@ nav a:hover {
     margin-bottom: 16px;
     max-width: 800px;
 }
-@media(max-width:700px){
-    .page h1 {
-        font-size: 36px;
-    }
-}
 .app-card {
     transition: transform 0.2s ease,
     box-shadow 0.2s ease;
 }
 .app-card:hover {
     transform: translateY(-6px);
-    box-shadow:
+    box-shadow: 
             0 10px 30px rgba(0,0,0,0.12);
 }
 
@@ -369,7 +343,7 @@ nav a:hover {
     flex-grow: 1;
 }
 .hero-app {
-    color: white;
+    color: var(--surface-color);
     border-radius: 30px;
     padding: 14px 30px;
     font-weight: 600;
@@ -454,7 +428,7 @@ nav a:hover {
 }
 .play-button {
     background: #000;
-    color: white;
+    color: var(--surface-color);
 }
 .web-button {
     background: #e0e0e0;
@@ -482,7 +456,7 @@ nav a:hover {
 .app-section {
     max-width: 900px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 .app-logo {
@@ -493,12 +467,12 @@ nav a:hover {
 }
 /* FEATURES */
 .features-section {
-    padding: 60px 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 .features-grid {
     max-width: 1100px;
-    margin: 40px auto;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
     gap: 25px;
@@ -506,7 +480,7 @@ nav a:hover {
 .feature-card {
     padding: 25px;
     border-radius: 20px;
-    background: #ffffff;
+    background: var(--surface-color);
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 .feature-card .material-symbols-outlined {
@@ -517,154 +491,142 @@ nav a:hover {
 .sport-categories {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
-    gap:20px;
-    max-width:900px;
-    margin:40px auto;
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
 }
 .sport-categories div {
-    padding:20px;
-    border-radius:20px;
-    background:#ffffff;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--surface-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 /* FAQ */
 .faq-section {
-    max-width:900px;
-    margin:auto;
-    padding:60px 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
 }
 .faq-section h3 {
-    margin-top:30px;
+    margin-top: 30px;
 }
 
 /* FINAL CTA */
 .final-cta {
-    text-align:center;
-    padding:70px 20px;
+    text-align: center;
+    padding: 70px 20px;
 }
 .final-cta p {
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 /* OTHER APPS */
 .other-apps {
-    padding:60px 20px;
-    text-align:center;
+    padding: 60px 20px;
+    text-align: center;
 }
 .other-apps-grid {
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 .other-apps-grid a {
-    width:180px;
-    padding:20px;
-    border-radius:20px;
-    background:white;
-    text-decoration:none;
-    color:inherit;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-    text-align:center;
+    width: 180px;
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--surface-color);
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
 }
 .other-apps-grid img {
-    width:100px;
-    height:100px;
-    object-fit:contain;
-    display:block;
-    margin:0 auto 15px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
 }
 .other-apps-grid span {
-    display:block;
-    margin-top:15px;
-    font-weight:600;
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
 }
 /* SPORT BRAND */
 .sport-theme {
-    --app-color:#EF5350;
+    --app-color: var(--sport-color);
 }
 .sport-theme h1,
 .sport-theme h2 {
-    color:var(--app-color);
+    color: var(--app-color);
 }
 .sport-theme .feature-card:hover {
-    border-color:var(--app-color);
+    border-color: var(--app-color);
 }
 .sport-theme .final-cta {
-    background:var(--app-color);
-    color:white;
+    background: var(--app-color);
+    color: var(--surface-color);
+}
+.screenshots-container {
+    margin: 30px 0;
 }
 .screenshots-container img {
-    width:280px;
-    border-radius:25px;
-    box-shadow:
-            0 15px 35px rgba(0,0,0,0.20);
-    transition:
-            transform .25s ease;
+    width: 280px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.20);
+    transition: transform .25s ease;
 }
 .screenshots-container img:hover {
-    transform:translateY(-8px);
+    transform: translateY(-8px);
 }
 .app-header-container {
-    text-align:center;
+    text-align: center;
 }
 .app-header-container .app-header-image {
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .category-icon {
-    font-size:40px;
-    display:block;
-    margin-bottom:10px;
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
 }
 .sport-categories h3 {
-    margin:0;
-    font-size:1.1rem;
+    margin: 0;
+    font-size: 1.1rem;
 }
 .how-it-works .feature-card {
-    min-height:220px;
+    min-height: 220px;
 }
 .coming-soon-badge {
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    padding:12px 22px;
-    border-radius:25px;
-    background:#f1f1f1;
-    color:#555;
-    font-weight:600;
-    border:1px solid #ddd;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 25px;
+    background: #f1f1f1;
+    color: #555;
+    font-weight: 600;
+    border: 1px solid #ddd;
 }
 .final-cta .coming-soon-badge {
-    background:rgba(255,255,255,0.2);
-    color:white;
-    border-color:rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.2);
+    color: var(--surface-color);
+    border-color: rgba(255,255,255,0.4);
 }
 .coming-soon-badge .material-symbols-outlined {
-    font-size:22px;
+    font-size: 22px;
 }
 .coming-soon-badge .material-symbols-outlined {
-    font-size:22px;
-}
-@media(max-width:600px){
-    .app-hero h1 {
-        font-size:2rem;
-    }
-    .app-buttons {
-        flex-direction:column;
-        align-items:center;
-    }
-    .app-button {
-        width:90%;
-        justify-content:center;
-    }
+    font-size: 22px;
 }
 .google-play-badge {
-    display:inline-block;
+    display: inline-block;
 }
 .google-play-badge img {
-    width:200px;
-    height:auto;
-    display:block;
+    width: 200px;
+    height: auto;
+    display: block;
 }
 .language-switch img {
     width: 28px;
@@ -678,4 +640,44 @@ nav a:hover {
     border: none;
     cursor: pointer;
     padding: 4px;
+}
+
+
+/* =========================
+   MEDIA
+========================= */
+
+@media(max-width: 700px){
+    .header-content {
+        flex-direction: column;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .page h1 {
+        font-size: 36px;
+    }
+}
+@media(max-width: 900px){
+    .apps-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 600px){
+    .app-hero h1 {
+        font-size: 2rem;
+    }
+    .app-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .app-button {
+        width: 90%;
+        justify-content: center;
+    }
 }

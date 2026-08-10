@@ -33,83 +33,60 @@ function loadLanding(appId) {
 style="--app-color:${app.themeColor}">
 
 <div class="app-header-container">
-<img src="${app.header}" class="app-header-image" alt="${app.name}">
+<img src="${app.logo}" class="app-logo" alt="${app.name}">
 </div>
-
-
 <h1 style="color:${app.themeColor}">${content.heroTitle}</h1>
 <p>${content.heroDescription}</p>
 
+
 <div class="app-buttons">
-
-
 ${app.playStore && app.playStore !== "#" ? `
-
-<a href="${app.playStore}"
-class="google-play-badge"
-target="_blank">
-<img 
-src="assets/images/store/google_play.svg"
-alt="Get ${app.name} on Google Play">
+<a href="${app.playStore}" class="google-play-badge" target="_blank">
+<img src="assets/images/store/google_play.svg" alt="Get ${app.name} on Google Play">
 </a>
 ` : `
-
 <div class="coming-soon-badge">
-<span class="material-symbols-outlined">
-schedule
-</span>
+<span class="material-symbols-outlined">schedule</span>
 ${common.comingSoonGooglePlay}
 </div>
 `}
-
 <a href="${app.webApp}" class="app-button web-button" target="_blank">
 <span class="material-symbols-outlined">language</span>${common.openWebApp}
 </a>
-
 </div>
 </section>
+
 
 <section class="app-screenshots">
-
 <h2>${common.seeInAction.replace("{app}", content.title)}</h2>
-
 <div class="screenshots-container">
-
 ${app.screenshots.map(img => `
-
 <img src="${img}" alt="${app.name} screenshot">
-
 `).join("")}
-
 </div>
 </section>
 
+
 <section class="app-section">
-<img src="${app.logo}" class="app-logo" alt="${app.name}">
+<img src="${app.header}" class="app-header-image" alt="${app.name}">
 <h2>${content.introTitle || ""}</h2>
 <p>${content.introText || ""}</p>
 </section>
 
+
 <section class="features-section">
-
 <h2>${common.powerfulFeatures}</h2>
-
 <div class="features-grid">
-
 ${content.features.map(feature => `
-
 <div class="feature-card">
 <span class="material-symbols-outlined">${feature.icon}</span>
 <h3>${feature.title}</h3>
 <p>${feature.text}</p>
 </div>
-
 `).join("")}
-
-
 </div>
-
 </section>
+
 
 <section class="app-section">
 <h2>${common.perfectFor}</h2>
@@ -118,22 +95,19 @@ ${content.perfectFor.map(item => {
         const parts = item.split(" ");
         const icon = parts.shift();
         const title = parts.join(" ");
-        
         return `
     <div>
         <span class="category-icon">${icon}</span>
         <h3>${title}</h3>
     </div>
     `;
-
     }).join("")}
 </div>
 </section>
 
+
 <section class="app-section how-it-works">
-
 <h2>${common.howItWorks}</h2>
-
 <div class="features-grid">
 ${(content.howItWorks || []).map(step => `
 <div class="feature-card">
@@ -145,26 +119,20 @@ ${(content.howItWorks || []).map(step => `
 </div>
 </section>
 
+
 <section class="faq-section">
 <h2>${common.faq}</h2>
-
 ${content.faq.map(item => `
-
 <h3>${item.q}</h3>
 <p>${item.a}</p>
-
 `).join("")}
-
 </section>
 
 
 <section class="final-cta" style="background:${app.themeColor};color:white">
-
 <h2>${content.ctaTitle || "Ready to get started?"}</h2>
 <p>${content.ctaText || ""}</p>
-
 ${app.playStore && app.playStore !== "#" ? `
-
 <a href="${app.playStore}"
 class="google-play-badge"
 target="_blank">
@@ -173,6 +141,7 @@ src="assets/images/store/google_play.svg"
 alt="Get ${app.name} on Google Play">
 </a>
 ` : `
+
 
 <div class="coming-soon-badge">
 <span class="material-symbols-outlined">
@@ -183,28 +152,20 @@ ${common.comingSoonGooglePlay}
 `}
 </section>
 
+
 <section class="other-apps">
 <h2>${common.discoverOtherApps}</h2>
-
 <div class="other-apps-grid">
-
-
 ${(app.relatedApps || []).map(id => {
         const related = Apps[id];
-
         return `
-
 <a  href="${id}.html" class="other-app-card" style="--app-color:${related.themeColor}">
 <img  src="${related.icon}" alt="${related.name}">
 <h3>${related.name}</h3>
 </a>
-
 `;
-
     }).join("")}
-
 </div>
-
 </section>
 `;
 }
