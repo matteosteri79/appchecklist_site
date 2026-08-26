@@ -51,7 +51,7 @@ const Apps = {
     shop: {
         id: "shop",
         name: "Shop Checklist",
-        status: "coming_soon",
+        status: "available",
         themeColor: "#43A047",
         seo: {
             image: "assets/images/shop/shopchecklist_logo.png",
@@ -60,9 +60,14 @@ const Apps = {
         header: "assets/images/shop/shopchecklist_header.png",
         logo: "assets/images/shop/shopchecklist_logo.png",
         icon: "assets/images/shop/shopchecklist_icon.png",
-        playStore: "#",
+        playStore: "https://play.google.com/store/apps/details?id=com.matteosteri.shopchecklist",
         webApp: "https://shop.app-checklist.com",
-        screenshots: [],
+        screenshots: [
+            "assets/images/shop/shop_1.png",
+            "assets/images/shop/shop_4.png",
+            "assets/images/shop/shop_6.png",
+            "assets/images/shop/shop_2.png"
+        ],
         relatedApps: ["sport", "trip"]
     }
 
