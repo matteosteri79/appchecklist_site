@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         article.innerHTML = `
     <img src="${app.icon}" class="app-icon" alt="${appTranslation.title}">
     
-    <span class="app-status ${statusClass}">${appTranslation.status}</span>
+    <!--span class="app-status ${statusClass}">${appTranslation.status}</span-->
     
     <p>${appTranslation.description}</p>
     
