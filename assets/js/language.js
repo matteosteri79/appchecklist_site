@@ -696,7 +696,7 @@ const translations = {
             shop: {
                 title: "Shop Checklist",
                 description: "Manage your shopping list easily and quickly.",
-                status: "Coming soon",
+                status: "Available on Google Play",
                 heroTitle: "Your shopping list always with you",
                 heroDescription: "Shop Checklist helps you organize your daily purchases with simple and customizable lists.",
                 introTitle: "Make shopping easier",
